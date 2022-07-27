@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import "variables_overrides.scss";   // <-- tjs ajouter cette ligne tout en haut du fichier
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+body{
+    font-family: 'Lato', sans-serif !important;
+}
+
+.bg-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.btn-accueil{
+    background-color: $primary;
+    &:hover{
+        background-color: $secondary;
+    }
+}
+
+[class*=reveal-]{
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.7s;
+}
+
+.reveal-2{
+    transition-delay: 0.1s;
+}
+
+.reveal-3{
+    transition-delay: 0.2s;
+}
+
+.reveal-4{
+    transition-delay: 0.3s;
+}
+
+.reveal-5{
+    transition-delay: 0.4s;
+}

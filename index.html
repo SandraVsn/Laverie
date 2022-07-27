@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laverie Privée Bordeaux</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Icones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/132aa12fcc.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Barre de navigation -->
+        <nav class="navbar navbar-expand-xl fixed-top navbar-light bg-light">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand"><img src="./img/logo.png" alt="" width="226.9"
+                        height="44.1"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#fonctionnement">Comment ça marche ?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pourquoi">Pourquoi nous choisir ?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#engagements">Nos engagements pour la planète</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="" data-bs-toggle="modal"
+                                data-bs-target="#helpModal">Aide / Passer commande</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal Aide / Passer commande -->
+        <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Une question ? Besoin de passer commande ?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Appelez nous au 05 56 20 00 00</h5>
+                        <ul>
+                            <li> Vous pouvez aussi nous envoyer un mail sur contact@laverieprivee.com </li>
+                            <li> En raison de fortes demandes, nous vous conseillons de passer commande au moins 24
+                                heures en avance !</li>
+                            <li> Pour un meilleur lavage, nous vous invitons à vous référer à notre mode d’emploi pour
+                                un bon lavage. </li>
+                            <li> Service client disponible 7J/7 </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header avec image -->
+        <section class="bg-image" style="background-image: url('./img/etendoir.jpg')">
+            <div class="container py-5 text-center">
+                <div class="row mt-5">
+                    <div class="col-12 offset-lg-3 col-lg-6 reveal-1">
+                        <h1 class="pt-5 mt-5 text-white text-uppercase fw-light">La laverie qui s'occupe de
+                            tout et qui
+                            vous
+                            livre à
+                            Bordeaux
+                        </h1>
+                    </div>
+                    <div class="col-12 reveal-2">
+                        <h2 class="pt-2 pb-5 mb-5 text-white fw-lighter fs-4">Nous collectons, lavons, séchons,
+                            plions
+                            et
+                            vous
+                            livrons
+                            votre
+                            linge à
+                            l'adresse de votre
+                            choix</h2>
+                    </div>
+                    <div class="col-12 col-lg-6 offset-lg-3 reveal-3">
+                        <form class="mt-4">
+                            <div class="">
+                                <input type="text" list="listeAdresses" class="form-control rounded-top" id="adresse"
+                                    placeholder="Entrez votre adresse ici !">
+                            </div>
+                            <div class="d-grid">
+                                <button type="button" class="btn rounded-bottom text-white btn-accueil">Passer
+                                    commande</button>
+                            </div>
+                            <p id="adresses"></p>
+                        </form>
+                    </div>
+                    <div class="col-12 col-lg-8 offset-lg-2 reveal-4">
+                        <p class="text-white fw-lighter pt-3 pb-5">Service de qualité &#124; Livraison en moins de 24h
+                            &#124;
+                            Précautions
+                            Covid 19 &#124;
+                            Paiement sécurisé</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+        <!-- Banderole verte annonce -->
+        <section class="bg-success bg-gradient shadow" id="fonctionnement">
+            <div class="container">
+                <p class="text-white text-center py-3">Notre service est de nouveau disponible le samedi !</p>
+            </div>
+
+        </section>
+
+        <!-- Comment ça marche -->
+        <section>
+            <div class="container text-center py-3 g-5">
+                <h2 class="text-secondary reveal-1">Comment ça marche ? </h2>
+                <h3 class="text-primary fw-light fs-4 pb-3 reveal-2">Passez commande en 2 minutes et simplifiez vous la
+                    vie</h3>
+                <div class="row g-5 pb-5">
+                    <div class="col-12 col-md-6 col-lg-4 reveal-3">
+                        <div class="card text-center rounded shadow">
+                            <img src="./img/etape1.png" class="card-img-top w-50 mx-auto" alt="Passer commande">
+                            <div class="card-body">
+                                <h5 class="card-title">Etape 1</h5>
+                                <p class="card-text">Passez commande en ligne et personnalisez entièrement votre
+                                    commande (créneau de livraison, température de lavage…)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 reveal-4">
+                        <div class="card text-center rounded shadow">
+                            <img src="./img/etape2.png" class="card-img-top w-50 mx-auto" alt="Passer commande">
+                            <div class="card-body">
+                                <h5 class="card-title">Etape 2</h5>
+                                <p class="card-text">Préparez votre linge dans un sac pour que l’un de nos livreurs
+                                    professionnels puisse le prendre en charge directement chez vous</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 reveal-5">
+                        <div class="card text-center rounded shadow">
+                            <img src="./img/etape3.png" class="card-img-top w-50 mx-auto" alt="Passer commande">
+                            <div class="card-body">
+                                <h5 class="card-title">Etape 3</h5>
+                                <p class="card-text">Profitez de votre temps. Nous collectons votre linge puis le
+                                    livrons lavé, séché et plié en moins de 24 heures</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary rounded shadow text-white mb-2">En savoir plus sur le
+                    fonctionnement</button>
+                <button class="btn btn-secondary rounded shadow mb-2"> Passer commande </button>
+            </div>
+
+
+        </section>
+
+        <!-- Offre de bienvenue -->
+        <section class="bg-secondary my-5 shadow" id="pourquoi">
+            <div class="container text-center">
+                <h2 class="text-white text-uppercase pt-2 fw-light"> Offre de bienvenue </h2>
+                <p class="text-white fw-lighter pb-2 fs-6">C’est votre première commande ? Profitez de 5.00€ de
+                    réduction
+                    avec le
+                    code
+                    "<strong>
+                        WELCOMELAVERIE</strong> "</p>
+            </div>
+        </section>
+
+        <!-- Pourquoi nous choisir -->
+        <section>
+            <section>
+                <div class="container text-center py-3 g-5">
+                    <h2 class="text-secondary reveal-1">Pourquoi nous choisir ? </h2>
+                    <h3 class="text-primary fw-light fs-4 pb-3 reveal-2">Le meilleur service de laverie privée à
+                        domicile de
+                        Paris
+                    </h3>
+                    <div class="row g-5 pb-5">
+                        <div class="col-12 col-md-6 col-lg-4 reveal-3">
+                            <div class="card text-center border-white">
+                                <img src="./img/qualite.png" class="card-img-top w-50 mx-auto" alt="Passer commande">
+                                <div class="card-body">
+                                    <h5 class="card-title">La qualité</h5>
+                                    <p class="card-text">Pour un service de qualité, nous traitons chaque commande
+                                        <strong>individuellement</strong> grâce à des process optimisés, des
+                                        professionnels formés et des machines de qualité.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 reveal-4">
+                            <div class="card text-center border-white">
+                                <img src="./img/proximite.png" class="card-img-top w-50 mx-auto" alt="Passer commande">
+                                <div class="card-body">
+                                    <h5 class="card-title">La proximité</h5>
+                                    <p class="card-text">Pour être au plus <strong>proche de nos clients</strong>, nous
+                                        cherchons à construire des relations humaines authentiques et durables parce que
+                                        chaque client est unique.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 reveal-5">
+                            <div class="card text-center border-white">
+                                <img src="./img/rapidite.png" class="card-img-top w-50 mx-auto" alt="Passer commande">
+                                <div class="card-body">
+                                    <h5 class="card-title">La rapidité</h5>
+                                    <p class="card-text">Nous savons que votre <strong>temps est précieux</strong>.
+                                        C’est pourquoi nous avons conçu un service <strong>simple et rapide</strong>.
+                                        Vous passez commande en 2 clics, on collecte votre linge et on vous le livre
+                                        propre en moins de 24h.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary rounded shadow text-white mb-2">En savoir plus sur le
+                        fonctionnement</button>
+                    <button class="btn btn-secondary rounded shadow mb-2" id="engagements"> Passer commande </button>
+                </div>
+
+
+            </section>
+        </section>
+
+
+        <!-- Engagements planète -->
+        <section class="bg-light shadow my-5">
+            <div class="container">
+                <h2 class="text-success text-center py-5 reveal-1">Nos engagements pour la planète</h2>
+                <div class="row">
+                    <div class="col-12 col-lg-5 my-auto reveal-2">
+                        <img src="./img/lessive-ecologique.png" class="img-fluid mb-5 rounded-3 shadow"
+                            alt="lessive ecologique">
+                    </div>
+                    <div class="col-12 offset-lg-1 col-lg-5 my-auto">
+                        <div class="reveal-3">
+                            <h2><i class="bi bi-check2-circle text-success pt-5"></i> Lors du lavage</h2>
+                            <p class="pb-3">Pour respecter l’environnement, nous vous proposons l’utilisation de lessive
+                                écologique.
+                                C’est à dire élaborée avec des matières premières d’origine végétale.</p>
+                        </div>
+                        <div class="reveal-4">
+                            <h2><i class="bi bi-check2-circle text-success"></i> Lors de la livraison</h2>
+                            <p class="pb-3">Pour la collecte et livraison du linge nous privilégions les moyens de
+                                transport doux
+                                (vélo,
+                                triporteurs électriques…)</p>
+                        </div>
+                        <div class="reveal-5">
+                            <h2><i class="bi bi-check2-circle text-success"></i> Lors de la restitution</h2>
+                            <p class="pb-5">Afin de lutter contre la production de déchets, nous n’utilisons pas
+                                d’emballages
+                                plastiques
+                                mais nous utilisons des cartons recyclables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="mb-5">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Logo avec lien vers le haut de la page -->
+                <div class="col-12 col-md-4">
+                    <a href="./index.html" class="navbar-brand"><img src="./img/logo.png" alt="" width="226.9"
+                            height="44.1"></a>
+                </div>
+
+                <!-- Mentions légales -->
+                <div class="col-12 col-md-4 text-md-center">
+                    <p><a class="text-decoration-none text-reset" data-bs-toggle="modal"
+                            data-bs-target="#mentionsLegales" href="" target="_blank">Mentions légales</a></p>
+                </div>
+
+                <!-- réseaux sociaux // Liens à fournir et intégrer -->
+                <div class="col-12 col-md-4 text-md-end">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <i class="bi bi-facebook"></i>
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="bi bi-instagram"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal mentions légales -->
+        <div class="modal fade" id="mentionsLegales" tabindex="-1" aria-labelledby="mentionsLegalesLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mentionsLegalesLabel">Mentions Légales</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo exercitationem eos
+                            ducimus facere, dolorem animi sed id placeat, sapiente nobis veniam assumenda
+                            eveniet distinctio sequi illo rem natus. Repellat, modi! Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit. Sed mollitia ipsa distinctio, doloribus nobis
+                            laudantium recusandae ad quia delectus sequi nam facere enim, porro deleniti laborum
+                            id? Impedit, nam provident. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Enim iusto, eligendi incidunt consequatur quod vitae deleniti commodi officia
+                            perspiciatis similique? Quaerat omnis veritatis tempora incidunt soluta quis
+                            nesciunt debitis error!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odit eaque vero, ducimus omnis
+                            aliquam sunt reprehenderit, tempore pariatur nisi saepe sed tenetur accusantium. Quisquam
+                            nobis impedit expedita modi eaque? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Iusto corporis culpa quia blanditiis, at voluptate ex laborum voluptatem itaque velit vel
+                            dolores a voluptatibus repudiandae provident illum aspernatur quis sequi? Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Tenetur exercitationem molestias cumque
+                            necessitatibus perferendis ratione sequi rerum accusantium at placeat doloremque facere
+                            dolores eum quas maxime, unde iste quo itaque.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odit eaque vero, ducimus omnis
+                            aliquam sunt reprehenderit, tempore pariatur nisi saepe sed tenetur accusantium. Quisquam
+                            nobis impedit expedita modi eaque? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Iusto corporis culpa quia blanditiis, at voluptate ex laborum voluptatem itaque velit vel
+                            dolores a voluptatibus repudiandae provident illum aspernatur quis sequi? Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Tenetur exercitationem molestias cumque
+                            necessitatibus perferendis ratione sequi rerum accusantium at placeat doloremque facere
+                            dolores eum quas maxime, unde iste quo itaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="./app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
